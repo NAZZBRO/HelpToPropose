@@ -1,0 +1,253 @@
+body {
+	background-size: 300% 300%;
+	background-position: center;
+	background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  
+  }
+
+#StartButton{
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+  
+
+.allcontainer{
+  position: relative;
+  
+}
+
+#myCanvas{
+  display: block;
+  border: 1px solid #ff0000;
+  background-color: #000000;  /*Replace with your background image */
+  background-size: 100% 100%;
+ 
+}
+
+
+
+
+
+  body::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: inherit;
+	filter: blur(4px);
+	z-index: -1;
+  }
+
+  
+ /* #dialogue-box{
+    position: absolute;
+	width: 400px;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 10px;
+	background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #5d4037;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+	overflow: hidden;
+  cursor: default;
+
+}*/
+  
+#dialogue-content {
+  
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	cursor: default;
+  }
+  
+  #response-button,
+  #response2-button,
+  #response-button3,
+  #response-button4,
+  #response-button5,
+  #response-button6,
+  #response-button7,
+  #response-button8 {
+   
+	margin-bottom: 10px;
+	display: none;
+	justify-content: center;
+	gap: 10px;
+	
+  }
+  
+  button{
+  position: absolute;
+  left: 290px;
+  top: 530px;
+  font-family: Arial, Helvetica, sans-serif;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	background-color: #ffffff; /* Primary button color */
+	color: #b84040; /* Text color */
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s, transform 0.3s;
+  }
+
+  #yes-button{
+    position: absolute;
+    left: 260px;
+    top: 530px;
+  }
+  #no-button{
+    position: absolute;
+    left: 330px;
+    top: 530px;
+  }
+  
+  button:hover {
+	background-color: #ff7043; /* Darker shade of primary button color */
+	transform: translateY(-3px);
+  }
+  
+  #dialogue-text2 {
+  cursor: default;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin-top: 10px;
+	padding: 10px;
+  position: absolute;
+  left: 100px;
+  top: 10px;
+	
+  }
+  
+  #Talk-her,
+  #Family,
+  #Date-Early,
+  #Ask-number,
+  #first-date,
+  #Continue-talk,
+  #Kiss-Her {
+  position: absolute;
+  top: 520px;
+  left: 250px;
+	font-size: 14px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border: 1px solid;
+	border-radius: 5px;
+	cursor: pointer;
+	background: none;
+	transition: background-color 0.3s;
+  border-color: #ff0000;
+  }
+
+  #Waited-Her,#Place-Like,#Her-Hobbies,#say-bye,
+  #know-more,#change-topic,#Hug-her{
+  position: absolute;
+  top: 560px;
+  left: 250px;
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border: 1px solid;
+	border-radius: 5px;
+	cursor: pointer;
+	background: none;
+	transition: background-color 0.3s;
+  border-color: #ff0000;
+  }
+  
+ 
+  
+  #Waited-Her:hover,
+  #Talk-her:hover,#Family:hover,
+  #Place-Like:hover,#Date-Early:hover,
+  #Her-Hobbies:hover, #Ask-number:hover,
+  #say-bye:hover,#first-date:hover,#know-more:hover,
+  #Continue-talk:hover,
+  #change-topic:hover,
+  #Kiss-Her:hover,
+  #Hug-her:hover,#button-no:hover,#button-yes:hover
+  {
+	background-color: #ffcc80; /* Lighter shade of accent color */
+  }
+
+
+  #try-again{
+    display: none;
+   font-size: 50px;
+   text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 150px;
+    left: 75px;
+
+  }
+
+
+  #button-no{
+ 
+    position: absolute;
+    left: 350px;
+    top: 530px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	background-color: #ffffff; /* Primary button color */
+	color: #b84040; /* Text color */
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s, transform 0.3s;
+
+  }
+
+  #button-yes{
+  
+    position: absolute;
+    left: 280px;
+    top: 530px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	background-color: #ffffff; /* Primary button color */
+	color: #b84040; /* Text color */
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s, transform 0.3s;
+  
+  }
+
+#than-ks{
+ display: none;
+  font-size: 50px;
+  text-align: center;
+   color: #ffffff;
+   position: absolute;
+   top: 160px;
+   left: 150px;
+
+}
+
+#response-button9{
+  display: none;
+}
+  
+  
+
+ 
+
+ 
